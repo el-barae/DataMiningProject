@@ -1,0 +1,121 @@
+CandidateName,ExperienceYears,EducationLevel,Skills,RequiredSkills,JobTitle,ClientName,RequiredExperience,EducationRequired,MatchScore
+Khalid Bennani,7,Master,"Angular, AutoCAD, Spring Boot","Python, React, Docker",Backend Developer,CodeLab,7,Master,6
+Khalid El Idrissi,4,Master,"Java, Django, Angular","React, Django, Angular",Backend Developer,CodeLab,2,Master,6
+Fatima El Fassi,8,Master,"Java, SQL, Spring Boot","Java, AutoCAD, React",Backend Developer,InnovIT,5,Master,3
+Aya Tahiri,5,Master,"Spring Boot, SQL, Django","Project Management, SQL, Docker",Full Stack Web Developer,InnovIT,4,Master,9
+Fatima El Fassi,7,Master,"Django, Docker, Spring Boot, Python","Project Management, Java, Spring Boot",Backend Developer,BuildTech,8,Master,7
+Youssef Alaoui,10,Master,"Angular, Spring Boot, AutoCAD","Python, Project Management, Docker",Project Coordinator,CodeLab,2,Master,1
+Youssef El Fassi,3,Master,"Python, AutoCAD, Django","Docker, Java, SQL",Civil Engineering Consultant,BTP Experts Maroc,6,Master,7
+Fatima Alaoui,7,Master,"Python, SQL, Angular, Project Management","Django, React, Project Management",Data Analyst,InnovIT,5,Master,5
+Mehdi El Idrissi,8,Master,"Java, Python, Angular","Project Management, Python, Django",Project Coordinator,BuildTech,2,Master,5
+Khalid Alaoui,5,Master,"SQL, Docker, Angular","Angular, Docker, AutoCAD",Project Coordinator,CodeLab,1,Master,2
+Fatima Ouchene,4,Master,"Docker, Spring Boot, Django","Java, Project Management, Django",Backend Developer,CodeLab,8,Master,4
+Salma Ben Ali,8,Master,"Django, Spring Boot, AutoCAD","React, AutoCAD, Python",Full Stack Web Developer,BTP Experts Maroc,2,Master,6
+Khalid Zahraoui,8,Master,"Project Management, Angular, AutoCAD, Docker","SQL, Python, React",Civil Engineering Consultant,BuildTech,7,Master,10
+Khalid El Fassi,3,Master,"Angular, Project Management, AutoCAD","Project Management, Django, Java",Full Stack Web Developer,CodeLab,9,Master,7
+Amine El Amrani,6,Master,"Angular, Spring Boot, React","Docker, SQL, Python",Civil Engineering Consultant,InnovIT,9,Master,5
+Omar Ben Ali,5,Master,"AutoCAD, Spring Boot, Python, Docker","React, Django, Docker",Civil Engineering Consultant,BTP Experts Maroc,8,Master,9
+Mehdi Tahiri,2,Master,"Spring Boot, Angular, AutoCAD, Python","Docker, Project Management, Angular",Full Stack Web Developer,BuildTech,9,Master,3
+Mehdi Ouchene,8,Master,"Python, Angular, Django, React","SQL, Docker, Angular",Project Coordinator,BTP Experts Maroc,2,Master,1
+Mehdi El Idrissi,6,Master,"Project Management, Spring Boot, Docker","Django, Project Management, Python",Civil Engineering Consultant,InnovIT,6,Master,4
+Youssef Tahiri,2,Master,"Java, React, Spring Boot, Docker","Docker, AutoCAD, Angular",Full Stack Web Developer,BuildTech,4,Master,9
+Khalid Alaoui,5,Master,"SQL, Docker, Django","Angular, Python, Django",Civil Engineering Consultant,BTP Experts Maroc,4,Master,4
+Fatima El Idrissi,1,Master,"Angular, Project Management, Spring Boot","Django, Docker, Angular",Data Analyst,DataMind,5,Master,2
+Youssef Ben Ali,10,Master,"Spring Boot, Django, Angular, Python","Docker, SQL, React",Project Coordinator,InnovIT,3,Master,10
+Salma El Amrani,6,Master,"Spring Boot, Project Management, Angular, Python","React, AutoCAD, Project Management",Backend Developer,InnovIT,1,Master,5
+Salma Bennani,9,Master,"Django, React, AutoCAD, Docker","Angular, Java, Docker",Civil Engineering Consultant,InnovIT,8,Master,3
+Salma Zahraoui,1,Master,"Docker, Java, React, AutoCAD","Spring Boot, Django, AutoCAD",Data Analyst,DataMind,5,Master,9
+Khalid El Idrissi,10,Master,"React, Docker, Python, Django","SQL, React, Django",Backend Developer,DataMind,3,Master,4
+Nour Ouchene,3,Master,"SQL, Project Management, Docker, Python","React, Django, Project Management",Backend Developer,CodeLab,7,Master,6
+Aya El Fassi,7,Master,"Project Management, Java, Angular","React, Django, Spring Boot",Civil Engineering Consultant,BTP Experts Maroc,7,Master,2
+Mehdi El Idrissi,4,Master,"Java, Docker, React, Django","Java, Django, AutoCAD",Full Stack Web Developer,CodeLab,1,Master,6
+Aya Ouchene,9,Master,"Django, AutoCAD, Docker, Angular","Django, Spring Boot, Angular",Civil Engineering Consultant,BTP Experts Maroc,9,Master,3
+Khalid El Idrissi,3,Master,"SQL, Java, Spring Boot, Django","Django, Python, Angular",Data Analyst,DataMind,2,Master,9
+Fatima Bennani,5,Master,"SQL, Java, Docker","SQL, Django, Python",Backend Developer,DataMind,5,Master,2
+Amine Ouchene,3,Master,"Angular, Docker, Java","React, Java, Python",Civil Engineering Consultant,CodeLab,5,Master,9
+Aya El Idrissi,7,Master,"Docker, React, Project Management","SQL, Angular, Docker",Full Stack Web Developer,BuildTech,8,Master,5
+Aya Ben Ali,5,Master,"Spring Boot, SQL, Docker, React","Docker, SQL, Project Management",Civil Engineering Consultant,CodeLab,8,Master,8
+Salma Ben Ali,9,Master,"Django, Java, Angular, Spring Boot","Angular, Spring Boot, Django",Project Coordinator,BTP Experts Maroc,7,Master,2
+Amine Alaoui,7,Master,"Docker, SQL, Spring Boot, Django","Python, SQL, Docker",Full Stack Web Developer,CodeLab,7,Master,6
+Youssef El Fassi,2,Master,"Angular, Django, Spring Boot, SQL","Project Management, AutoCAD, Django",Data Analyst,InnovIT,6,Master,3
+Amine Zahraoui,4,Master,"Java, Python, Docker, SQL","Docker, React, Java",Backend Developer,BTP Experts Maroc,6,Master,10
+Aya Zahraoui,9,Master,"Docker, Project Management, SQL","AutoCAD, Spring Boot, Project Management",Civil Engineering Consultant,BTP Experts Maroc,9,Master,5
+Khalid Ben Ali,2,Master,"Docker, Project Management, Django, Angular","Django, React, Java",Full Stack Web Developer,BuildTech,6,Master,8
+Youssef Zahraoui,10,Master,"Project Management, Python, AutoCAD, Django","Python, React, Django",Project Coordinator,DataMind,2,Master,10
+Nour El Fassi,9,Master,"Python, AutoCAD, Project Management","AutoCAD, Docker, Project Management",Full Stack Web Developer,BTP Experts Maroc,2,Master,1
+Omar Bouziane,10,Master,"Django, Project Management, AutoCAD, Python","AutoCAD, Python, Angular",Project Coordinator,DataMind,5,Master,5
+Youssef Alaoui,5,Master,"SQL, Project Management, Spring Boot","Docker, Python, Spring Boot",Data Analyst,CodeLab,4,Master,3
+Youssef El Idrissi,2,Master,"Project Management, AutoCAD, Python","Docker, Project Management, AutoCAD",Backend Developer,InnovIT,2,Master,4
+Salma El Idrissi,4,Master,"Django, Spring Boot, Project Management, SQL","Python, Django, SQL",Data Analyst,BuildTech,3,Master,2
+Fatima El Fassi,7,Master,"Spring Boot, Python, Angular","Angular, AutoCAD, Docker",Civil Engineering Consultant,DataMind,7,Master,9
+Youssef Zahraoui,8,Master,"AutoCAD, Python, Spring Boot, Docker","SQL, Spring Boot, Docker",Full Stack Web Developer,BTP Experts Maroc,8,Master,3
+Youssef El Amrani,3,Master,"Angular, Spring Boot, Project Management, Django","Project Management, AutoCAD, React",Project Coordinator,DataMind,6,Master,2
+Salma Ouchene,1,Master,"Java, React, SQL","Spring Boot, Python, Docker",Project Coordinator,BTP Experts Maroc,5,Master,10
+Youssef Bouziane,4,Master,"React, Java, Spring Boot","Django, Docker, Java",Full Stack Web Developer,DataMind,1,Master,9
+Amine Tahiri,2,Master,"SQL, Docker, Spring Boot, React","AutoCAD, Java, Django",Full Stack Web Developer,BTP Experts Maroc,8,Master,7
+Mehdi El Amrani,8,Master,"Angular, Project Management, Java, React","Django, Docker, SQL",Civil Engineering Consultant,CodeLab,3,Master,6
+Nour Zahraoui,4,Master,"Project Management, SQL, Spring Boot, Docker","Project Management, SQL, Django",Data Analyst,BTP Experts Maroc,6,Master,1
+Khalid Alaoui,2,Master,"Java, AutoCAD, React","Angular, AutoCAD, Django",Project Coordinator,BTP Experts Maroc,3,Master,5
+Salma Tahiri,6,Master,"Django, Docker, Python","Java, Docker, SQL",Civil Engineering Consultant,InnovIT,7,Master,3
+Youssef Alaoui,6,Master,"Python, SQL, React, Spring Boot","AutoCAD, SQL, React",Data Analyst,BTP Experts Maroc,7,Master,1
+Youssef El Fassi,10,Master,"Spring Boot, Java, Python","Angular, Java, SQL",Civil Engineering Consultant,InnovIT,9,Master,4
+Mehdi El Idrissi,4,Master,"React, SQL, Docker, AutoCAD","Docker, Project Management, Spring Boot",Project Coordinator,BuildTech,5,Master,2
+Amine Bennani,6,Master,"Django, Project Management, Java","Python, Django, SQL",Full Stack Web Developer,InnovIT,8,Master,2
+Khalid Bennani,2,Master,"Project Management, SQL, Java, AutoCAD","React, Java, Spring Boot",Full Stack Web Developer,CodeLab,8,Master,3
+Omar El Amrani,10,Master,"Spring Boot, SQL, Docker, Python","Docker, Angular, AutoCAD",Data Analyst,InnovIT,1,Master,8
+Salma El Idrissi,2,Master,"Angular, Python, React, Django","Spring Boot, Django, Angular",Backend Developer,BuildTech,5,Master,8
+Salma El Fassi,10,Master,"React, Angular, SQL, Docker","Django, Angular, Java",Data Analyst,CodeLab,3,Master,7
+Mehdi El Amrani,4,Master,"Django, Spring Boot, React","AutoCAD, Project Management, Java",Backend Developer,DataMind,1,Master,6
+Nour Bennani,8,Master,"Spring Boot, Docker, Django","Docker, Java, Angular",Civil Engineering Consultant,DataMind,4,Master,9
+Nour Tahiri,7,Master,"React, Angular, Spring Boot","Docker, Java, Project Management",Civil Engineering Consultant,InnovIT,8,Master,4
+Salma Alaoui,9,Master,"Spring Boot, React, Angular","AutoCAD, SQL, Spring Boot",Project Coordinator,InnovIT,3,Master,1
+Amine Bennani,8,Master,"Angular, SQL, Project Management, AutoCAD","Java, Django, SQL",Backend Developer,BuildTech,2,Master,8
+Youssef Ouchene,5,Master,"AutoCAD, Docker, Angular, Python","React, Docker, SQL",Project Coordinator,BuildTech,9,Master,7
+Sara Ben Ali,2,Master,"SQL, Docker, React","AutoCAD, Spring Boot, SQL",Full Stack Web Developer,BTP Experts Maroc,5,Master,7
+Sara Ouchene,5,Master,"Java, SQL, Docker","AutoCAD, Project Management, Docker",Backend Developer,BuildTech,7,Master,3
+Youssef Ouchene,8,Master,"AutoCAD, Angular, Docker","Angular, SQL, AutoCAD",Data Analyst,BTP Experts Maroc,2,Master,4
+Sara Tahiri,10,Master,"Angular, Project Management, Django, Spring Boot","React, SQL, Project Management",Full Stack Web Developer,CodeLab,9,Master,10
+Omar El Fassi,9,Master,"SQL, Docker, Java","Java, SQL, Docker",Full Stack Web Developer,InnovIT,9,Master,9
+Fatima El Amrani,9,Master,"Spring Boot, Project Management, Java","Angular, Docker, Django",Data Analyst,CodeLab,4,Master,6
+Youssef Bouziane,1,Master,"Django, Python, React, Java","Docker, SQL, AutoCAD",Full Stack Web Developer,BuildTech,4,Master,5
+Omar Alaoui,9,Master,"React, SQL, Spring Boot, Python","Django, Java, Project Management",Backend Developer,CodeLab,6,Master,3
+Amine Ben Ali,7,Master,"Django, React, Project Management, AutoCAD","Java, AutoCAD, Django",Project Coordinator,CodeLab,6,Master,9
+Khalid Bouziane,9,Master,"Spring Boot, Python, Project Management, Docker","Java, React, Project Management",Full Stack Web Developer,CodeLab,1,Master,5
+Sara El Idrissi,8,Master,"Docker, SQL, AutoCAD","Java, Project Management, Docker",Backend Developer,BuildTech,9,Master,5
+Nour Ben Ali,1,Master,"React, Spring Boot, Java","Django, Python, Spring Boot",Civil Engineering Consultant,CodeLab,2,Master,4
+Omar Zahraoui,8,Master,"Django, Docker, Spring Boot, React","Docker, AutoCAD, Spring Boot",Backend Developer,BTP Experts Maroc,5,Master,4
+Khalid Alaoui,8,Master,"Angular, SQL, AutoCAD","Java, SQL, Spring Boot",Project Coordinator,BuildTech,9,Master,1
+Amine El Idrissi,3,Master,"Project Management, Docker, Python, Django","Python, AutoCAD, Project Management",Backend Developer,CodeLab,4,Master,7
+Fatima Zahraoui,1,Master,"Docker, AutoCAD, Django","Java, AutoCAD, Project Management",Data Analyst,BuildTech,3,Master,9
+Mehdi Ben Ali,8,Master,"Angular, Python, Docker, Java","Docker, React, Python",Project Coordinator,DataMind,7,Master,3
+Aya El Idrissi,3,Master,"Java, Docker, Django, Spring Boot","AutoCAD, Angular, Java",Civil Engineering Consultant,BTP Experts Maroc,6,Master,2
+Salma Ben Ali,3,Master,"React, Spring Boot, Docker","Java, Python, Spring Boot",Data Analyst,CodeLab,8,Master,3
+Youssef Alaoui,1,Master,"Java, AutoCAD, Angular, Docker","Docker, Django, AutoCAD",Backend Developer,DataMind,3,Master,1
+Omar El Amrani,5,Master,"Python, AutoCAD, React","Docker, Angular, Project Management",Project Coordinator,DataMind,5,Master,6
+Amine Bouziane,10,Master,"Angular, Python, Java, Docker","Angular, Java, React",Civil Engineering Consultant,BuildTech,4,Master,7
+Mehdi Tahiri,7,Master,"Spring Boot, Django, Python","Project Management, Python, Spring Boot",Data Analyst,DataMind,4,Master,2
+Youssef Alaoui,10,Master,"SQL, Java, Docker","SQL, Spring Boot, Project Management",Civil Engineering Consultant,BTP Experts Maroc,4,Master,8
+Amine El Fassi,9,Master,"Docker, SQL, Angular, Project Management","Java, Python, Angular",Backend Developer,BTP Experts Maroc,8,Master,6
+Khalid Zahraoui,7,Master,"React, Docker, Spring Boot","Project Management, Python, Django",Civil Engineering Consultant,InnovIT,6,Master,4
+Mehdi Zahraoui,9,Master,"Angular, Project Management, Python, React","Python, React, Spring Boot",Full Stack Web Developer,BTP Experts Maroc,3,Master,5
+Sara Ouchene,8,Master,"Docker, Angular, Spring Boot","Django, Java, Angular",Data Analyst,DataMind,5,Master,8
+Omar Bennani,2,Master,"Java, Python, React, Spring Boot","Java, React, AutoCAD",Civil Engineering Consultant,BTP Experts Maroc,6,Master,3
+Khalid Tahiri,1,Master,"AutoCAD, React, Django, Java","AutoCAD, Java, Project Management",Backend Developer,BuildTech,5,Master,3
+Aya Bouziane,7,Master,"Project Management, Python, SQL","React, Docker, Spring Boot",Backend Developer,InnovIT,6,Master,4
+Sara El Idrissi,7,Master,"AutoCAD, Java, Angular","Angular, AutoCAD, React",Civil Engineering Consultant,DataMind,8,Master,1
+Omar Alaoui,8,Master,"Django, AutoCAD, Spring Boot","AutoCAD, Django, Project Management",Backend Developer,InnovIT,7,Master,9
+Amine El Fassi,5,Master,"Angular, SQL, Django","Spring Boot, Python, Django",Project Coordinator,DataMind,5,Master,8
+Nour Alaoui,3,Master,"Spring Boot, Docker, SQL, Django","SQL, Django, React",Project Coordinator,BuildTech,6,Master,8
+Aya Ouchene,8,Master,"Project Management, Java, Django, Python","Django, Project Management, Spring Boot",Project Coordinator,InnovIT,4,Master,10
+Youssef El Fassi,6,Master,"Java, Python, Angular, Django","Angular, Python, Java",Full Stack Web Developer,CodeLab,9,Master,6
+Amine Ben Ali,3,Master,"AutoCAD, Docker, React, SQL","Spring Boot, React, Docker",Civil Engineering Consultant,DataMind,4,Master,7
+Salma Tahiri,1,Master,"Python, Project Management, SQL, Angular","Spring Boot, Project Management, Django",Full Stack Web Developer,CodeLab,1,Master,6
+Amine Ouchene,3,Master,"React, Spring Boot, Python","Angular, AutoCAD, Python",Backend Developer,InnovIT,7,Master,9
+Mehdi El Fassi,5,Master,"Angular, Docker, Spring Boot","Python, Django, React",Full Stack Web Developer,CodeLab,7,Master,3
+Youssef El Amrani,3,Master,"React, SQL, Project Management","Project Management, Java, Django",Backend Developer,CodeLab,4,Master,3
+Fatima El Idrissi,1,Master,"Project Management, Django, AutoCAD, Docker","Docker, Django, Java",Backend Developer,InnovIT,3,Master,3
+Nour Ben Ali,5,Master,"Angular, Python, AutoCAD","Project Management, Spring Boot, Java",Data Analyst,BuildTech,8,Master,10
+Omar El Amrani,10,Master,"Spring Boot, SQL, Java, Docker","Python, Java, Angular",Project Coordinator,CodeLab,5,Master,3
+Youssef Zahraoui,7,Master,"SQL, Angular, Django","Java, Spring Boot, Django",Backend Developer,CodeLab,7,Master,9
+Mehdi El Fassi,7,Master,"React, Docker, SQL, Spring Boot","SQL, Angular, Django",Data Analyst,BuildTech,4,Master,4
+Sara Ouchene,9,Master,"Angular, Spring Boot, React","React, SQL, Django",Project Coordinator,CodeLab,4,Master,7
