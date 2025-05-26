@@ -659,130 +659,77 @@ if 'Random Forest' in results:
 print("\n\n8. SYSTÈME DE RECOMMANDATION")
 print("-" * 30)
 
-# Fonction de recommandation basée sur le meilleur modèle
-best_model_name = max(results.keys(), key=lambda x: results[x]['accuracy'])
-best_model = results[best_model_name]['model']
+if results:
+    # Fonction de recommandation basée sur le meilleur modèle
+    best_model_name = max(results.keys(), key=lambda x: results[x]['accuracy'])
+    best_model = results[best_model_name]['model']
 
-print(f"Utilisation du meilleur modèle: {best_model_name}")
+    print(f"Utilisation du meilleur modèle: {best_model_name}")
 
 
-def recommend_candidates(job_requirements, top_n=5):
-    """
-    Recommande les meilleurs candidats pour un poste donné
-    """
-    # Simulation d'une base de candidats (utilisation du dataset existant)
-    candidates_df = df_clean.copy()
+    def recommend_candidates(job_requirements, top_n=5):
+        """
+        Recommande les meilleurs candidats pour un poste donné
+        """
+        candidates_df = df_clean.copy()
+        recommendations = []
 
-    # Calcul du score de correspondance pour chaque candidat
-    recommendations = []
+        for idx, candidate in candidates_df.iterrows():
+            # Calcul simple du score basé sur l'expérience et l'éducation
+            exp_match = 1 - abs(candidate['ExperienceYears'] - job_requirements.get('required_experience', 5)) / 10
+            exp_match = max(0, exp_match)
 
-    for idx, candidate in candidates_df.iterrows():
-        # Création du vecteur de features pour ce candidat
-        candidate_features = [
-            (candidate['ExperienceYears'] - scaler.mean_[0]) / scaler.scale_[0],  # Normalisation
-            (job_requirements['required_experience'] - scaler.mean_[1]) / scaler.scale_[1],
-            (candidate['ExperienceYears'] - job_requirements['required_experience'] - scaler.mean_[3]) / scaler.scale_[
-                3]
-        ]
+            edu_match = 1 if candidate['EducationLevel'] == job_requirements.get('education', 'Master') else 0.7
 
-        # Ajout des features encodées (simplification)
-        for col in categorical_columns:
-            if col == 'EducationRequired':
-                # Utilisation de l'éducation requise du job
-                if job_requirements['education'] in label_encoders[col].classes_:
-                    encoded_val = label_encoders[col].transform([job_requirements['education']])[0]
-                else:
-                    encoded_val = 0
-            elif col == 'JobTitle':
-                if job_requirements['job_title'] in label_encoders[col].classes_:
-                    encoded_val = label_encoders[col].transform([job_requirements['job_title']])[0]
-                else:
-                    encoded_val = 0
-            else:
-                # Pour les autres colonnes, utiliser les valeurs du candidat
-                if candidate[col.replace('_encoded', '')] in label_encoders[col].classes_:
-                    encoded_val = label_encoders[col].transform([str(candidate[col.replace('_encoded', '')])])[0]
-                else:
-                    encoded_val = 0
-            candidate_features.append(encoded_val)
-
-        # Prédiction du niveau de match
-        try:
-            match_prediction = best_model.predict([candidate_features])[0]
-
-            # Vérification si le modèle a predict_proba
-            if hasattr(best_model, 'predict_proba'):
-                match_prob = best_model.predict_proba([candidate_features])[0].max()
-            else:
-                # Pour les modèles sans predict_proba, utiliser une confiance basée sur la distance
-                match_prob = 0.8  # Valeur par défaut
+            # Score composite
+            composite_score = (exp_match * 0.6 + edu_match * 0.4)
 
             recommendations.append({
                 'candidate_name': candidate['CandidateName'],
                 'experience': candidate['ExperienceYears'],
                 'education': candidate['EducationLevel'],
                 'skills': candidate['Skills'],
-                'predicted_match': le_target.inverse_transform([match_prediction])[0],
-                'confidence': match_prob,
-                'actual_match_score': candidate['MatchScore']
-            })
-        except Exception as e:
-            # En cas d'erreur, utiliser le score actuel
-            recommendations.append({
-                'candidate_name': candidate['CandidateName'],
-                'experience': candidate['ExperienceYears'],
-                'education': candidate['EducationLevel'],
-                'skills': candidate['Skills'],
-                'predicted_match': categorize_match_fine(
-                    candidate['MatchScore']) if 'categorize_match_fine' in locals() else categorize_match(
-                    candidate['MatchScore']),
-                'confidence': candidate['MatchScore'],
+                'predicted_match': 'Élevé' if composite_score > 0.8 else 'Moyen' if composite_score > 0.5 else 'Faible',
+                'confidence': composite_score,
                 'actual_match_score': candidate['MatchScore']
             })
 
-    # Tri des recommandations par niveau de match et confiance
-    recommendations_df = pd.DataFrame(recommendations)
+        # Tri des recommandations
+        recommendations_df = pd.DataFrame(recommendations)
+        recommendations_df = recommendations_df.sort_values('confidence', ascending=False)
 
-    # Ordre de priorité: Élevé > Moyen > Faible
-    match_priority = {'Élevé': 3, 'Moyen': 2, 'Faible': 1}
-    recommendations_df['match_priority'] = recommendations_df['predicted_match'].map(match_priority)
-
-    # Tri par priorité puis par confiance
-    recommendations_df = recommendations_df.sort_values(['match_priority', 'confidence'], ascending=[False, False])
-
-    return recommendations_df.head(top_n)
+        return recommendations_df.head(top_n)
 
 
-# Exemple d'utilisation du système de recommandation
-print("\nEXEMPLE DE RECOMMANDATION:")
-print("-" * 25)
+    # Exemple d'utilisation du système de recommandation
+    print("\nEXEMPLE DE RECOMMANDATION:")
+    print("-" * 25)
 
-# Définition d'un poste exemple
-job_example = {
-    'job_title': 'Data Scientist',
-    'required_experience': 5,
-    'education': 'Master',
-    'required_skills': 'Python, Machine Learning, Statistics'
-}
+    job_example = {
+        'job_title': 'Data Scientist',
+        'required_experience': 5,
+        'education': 'Master',
+        'required_skills': 'Python, Machine Learning, Statistics'
+    }
 
-print(f"Poste à pourvoir: {job_example['job_title']}")
-print(f"Expérience requise: {job_example['required_experience']} ans")
-print(f"Éducation requise: {job_example['education']}")
-print(f"Compétences requises: {job_example['required_skills']}")
+    print(f"Poste à pourvoir: {job_example['job_title']}")
+    print(f"Expérience requise: {job_example['required_experience']} ans")
+    print(f"Éducation requise: {job_example['education']}")
+    print(f"Compétences requises: {job_example['required_skills']}")
 
-# Génération des recommandations
-top_candidates = recommend_candidates(job_example, top_n=10)
+    # Génération des recommandations
+    top_candidates = recommend_candidates(job_example, top_n=5)
 
-print(f"\nTop 10 candidats recommandés:")
-print("=" * 50)
-for idx, candidate in top_candidates.iterrows():
-    print(f"\n{idx + 1}. {candidate['candidate_name']}")
-    print(f"   Expérience: {candidate['experience']} ans")
-    print(f"   Éducation: {candidate['education']}")
-    print(f"   Compétences: {candidate['skills'][:50]}...")
-    print(f"   Match prédit: {candidate['predicted_match']}")
-    print(f"   Confiance: {candidate['confidence']:.3f}")
-    print(f"   Score réel: {candidate['actual_match_score']:.3f}")
+    print(f"\nTop 5 candidats recommandés:")
+    print("=" * 50)
+    for idx, candidate in top_candidates.iterrows():
+        print(f"\n{len(top_candidates) - idx}. {candidate['candidate_name']}")
+        print(f"   Expérience: {candidate['experience']} ans")
+        print(f"   Éducation: {candidate['education']}")
+        print(f"   Compétences: {candidate['skills']}")
+        print(f"   Match prédit: {candidate['predicted_match']}")
+        print(f"   Confiance: {candidate['confidence']:.3f}")
+        print(f"   Score réel: {candidate['actual_match_score']:.3f}")
 
 # =====================================================
 # 9. ÉVALUATION ET MÉTRIQUES DE PERFORMANCE
